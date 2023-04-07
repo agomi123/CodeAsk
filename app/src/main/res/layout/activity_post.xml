@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    android:background="@color/black"
+    tools:context="com.example.codeask.PostActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#070707"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:onClick="finishthis"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font2"
+                android:textColor="#F44336"
+                android:text="Review your Post "
+                android:textSize="21sp" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/postcommeny"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/upimage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/lk"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/krishna" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldmk"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upimage"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:background="#222222"
+        app:hintTextColor="@color/white"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        android:textColorHint="@color/white"
+        app:boxCornerRadiusTopStart="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="   description about post"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/management"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextFieldm"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filledTextFieldmk"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="10dp"
+        android:background="#222222"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:textColorHint="@color/white"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Near by location"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/management"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:layout_below="@id/filledTextFieldm"
+        android:layout_centerHorizontal="true"
+        android:text="Post"
+        app:icon="@drawable/postimg" />
+</RelativeLayout>

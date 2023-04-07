@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/savepost"
+        android:title="Save Post"
+        android:icon="@drawable/s1"
+        />
+    <item
+        android:id="@+id/sharepost"
+        android:icon="@drawable/s4"
+        android:title="Share the Post"/>
+    <item
+        android:id="@+id/blockuser"
+        android:icon="@drawable/s2"
+        android:title="Block"/>
+    <item
+        android:id="@+id/reportuser"
+        android:icon="@drawable/s3"
+        android:title="Report"/>
+</menu>

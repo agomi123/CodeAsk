@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1f2c34"
+    android:layout_height="match_parent"
+    tools:context="com.example.codeask.AskedQuestionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asked Queries"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:id="@+id/a1"
+        android:textColor="#F44336"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/font6"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/a1"
+        android:layout_marginStart="20dp"
+        android:id="@+id/searchq"
+        android:elevation="10dp"
+        android:textColorHint="#5E5D5D"
+        android:hint="   Search....."
+        android:background="@drawable/rounded"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/searchq"
+        android:id="@+id/oppoe"
+        android:layout_below="@id/a1"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipeRefreshLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchq"
+        android:layout_marginTop="18dp"
+        tools:context=".MainActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler298"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

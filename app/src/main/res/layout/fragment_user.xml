@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121b22"
+    tools:context="com.example.codeask.Fragments.UserFragment">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#121b22"
+       android:id="@+id/llll">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_margin="10dp"
+          android:orientation="horizontal">
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:id="@+id/addpost"
+             android:src="@drawable/ic_baseline_camera_enhance"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="CodeAsk"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:textColor="#515151"
+             android:fontFamily="@font/font9"
+             android:layout_weight="1"
+             android:textSize="23sp"
+             />
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:id="@+id/notification"
+             android:src="@drawable/notifications"/>
+      </LinearLayout>
+   </androidx.cardview.widget.CardView>
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/swipeRefreshLayout1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/llll"
+       android:background="#121b22"
+       android:layout_marginTop="8dp"
+       tools:context=".MainActivity">
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycler2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/black"
+          android:backgroundTint="@color/black"
+         />
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context="com.example.codeask.ViewProfile">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/next12"
+        android:layout_marginTop="40dp"
+        android:onClick="backplease"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/usp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font7"
+        android:text="Username"
+        android:layout_marginTop="30dp"
+        android:textColor="#8BC34A"
+        android:textSize="20sp" />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font7"
+        android:text="Profile"
+         android:letterSpacing=".1"
+         android:layout_below="@id/usp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/krishna" />
+
+
+    <TextView
+        android:id="@+id/namep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/font7"
+        android:text="Username"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgp"
+        android:layout_marginTop="30dp"
+        android:textColor="#CDDC39"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/emailp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/font7"
+        android:text="himanshugupta3385@gmail.com"
+        android:layout_below="@id/namep"
+        android:layout_centerHorizontal="true"
+        android:textColor="#A8A7A7"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/sddff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/font6"
+            android:text="Orgnization-"
+            android:textColor="#7E7E7E"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/orgp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="@font/font7"
+            android:layout_gravity="center"
+            android:text="MADAN MOHAN MALAVIYA UNIVERSITY GORAKHPUR"
+            android:textColor="#FF5722"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sddff"
+        app:cornerRadius="30dp"
+        android:id="@+id/resumee"
+        android:backgroundTint="#CDDC39"
+        android:text="Download Resume"/>
+
+</RelativeLayout>

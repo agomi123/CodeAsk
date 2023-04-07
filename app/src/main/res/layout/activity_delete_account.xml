@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#384a62"
+    android:layout_height="match_parent"
+    tools:context="com.example.codeask.DeleteAccount">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Deletion"
+        android:textColor="#ffffff"
+        android:id="@+id/q"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="19sp"
+        android:fontFamily="@font/font2"/>
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/q"
+        android:layout_marginLeft="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/q"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter your Email ID">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailm"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="#ffffff"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/filledTextField"
+        android:layout_marginTop="54dp"
+        android:textColorHint="@color/black"
+        app:passwordToggleEnabled="true"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter your Password">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passw"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/filledTextField2"
+        android:layout_marginTop="54dp"
+        android:textColorHint="@color/black"
+        android:layout_marginEnd="32dp"
+        android:hint="Reason for Account Deletion">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reason"
+            android:layout_width="match_parent"
+            android:backgroundTint="#ffffff"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:id="@+id/delrt"
+        android:layout_below="@id/filledTextField3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#5accbe"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/delrt"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Problem "
+        android:onClick="openreport"
+        android:textColor="@color/white"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="| Help"
+        android:textStyle="bold"
+        android:textColor="#FF5722"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/upload"
+        android:title="Upload Image"
+        android:icon="@drawable/mark"/>
+    <item
+        android:id="@+id/invite"
+        android:title="Invite Friend"/>
+    <item
+        android:id="@+id/changepass"
+        android:title="Change Password"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/deleteacc"
+        android:title="Delete Account"/>
+</menu>

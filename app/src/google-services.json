@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "781138471381",
+    "firebase_url": "https://codeask-58510-default-rtdb.firebaseio.com",
+    "project_id": "codeask-58510",
+    "storage_bucket": "codeask-58510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781138471381:android:2c5e5c496121705176b55c",
+        "android_client_info": {
+          "package_name": "com.agomi.codeasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781138471381-4d7ti97s8kdapcfvpvun89sijp30m1u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCctnJMXTYhQO38_uOFy0ib5IgmArWE93c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781138471381-4d7ti97s8kdapcfvpvun89sijp30m1u3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
